@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+<meta charset="ISO-8859-1">
+<title>Dice</title>
+<script defer src="Dice.js"></script>
+<script defer src="DiceController.js"></script>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<!-- Bruker inline css grunnet problemer med å linke css page inni et dynamic web project -->
+<style>
+h1 {
+	margin-top: 100px;
+}
+
+body {
+	text-align: center; 
+}
+
+p {
+	font-size: 20px;
+}
+
+p.result {
+	margin-top: 200px;
+}
+</style>
+
+
+<body>
+
+<h1>Trill en terning da vel!</h1>
+<div id = "root">
+<p><button type="button" data-dicebutton>
+Trill terning
+</button></p>
+<p class="result">Resultat: <span data-diceoutput></span></p>
+</div>
+
+</body>
+</html>
